@@ -34,6 +34,7 @@ public class Calculator {
         }
         else
         {
+
             System.out.println("No se puede dividir por 0");
         }
 

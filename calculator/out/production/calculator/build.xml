@@ -1,16 +1,19 @@
 <?xml version="1.0"?>
-<project name="Calculator" default="todo">
+<project name="Mi_Proyecto" default="todo">
 
-    <target name="todo" depends="jar">
+    <target name="todo" depends="empaqueta">
     </target>
 
-    <target name="jar" depends="compile">
-        <jar destfile="../jar/fichero.jar" includes="../src/**/*.class"/>
+    <target name="empaqueta" depends="compila">
+        <jar destfile="jar/fichero.jar" basedir="">
+            <manifest>
+                <attribute name="Main-Class" value="Main" />
+            </manifest>
+        </jar>
     </target>
-    <target name="compile">
-        <javac includeantruntime="false" srcdir="." destdir="../src"/>
 
-
-</target>
+    <target name="compila">
+        <javac srcdir="." destdir="../src"/>
+    </target>
 
 </project>
