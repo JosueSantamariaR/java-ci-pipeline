@@ -5,6 +5,6 @@ jdk:
 services:
   - docker
 
-before_script:
+before_install:
   - sudo apt-get install ant-optional
 script: ant todo src/jar/fichero.jar
