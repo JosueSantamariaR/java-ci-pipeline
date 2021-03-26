@@ -5,7 +5,7 @@
     </target>
 
     <target name="empaqueta" depends="compila">
-        <jar destfile="src/jar/fichero.jar" basedir="">
+        <jar destfile="jar/prueba.jar" basedir="">
             <manifest>
                 <attribute name="Main-Class" value="Main" />
             </manifest>
@@ -13,7 +13,7 @@
     </target>
 
     <target name="compila">
-        <javac srcdir="." destdir="src"/>
+        <javac srcdir="." destdir="./src"/>
     </target>
 
 </project>
