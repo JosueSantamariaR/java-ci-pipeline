@@ -1,8 +1,8 @@
-dist: xenial
 language: java
 jdk:
-  - openjdk16
-addons:
-  apt:
-    packages:
-      - ant
+  - oraclejdk16
+
+services:
+  - docker
+
+script: ant todo ./src/prueba.jar
