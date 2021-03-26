@@ -5,4 +5,4 @@ jdk:
 services:
   - docker
 
-script: ant todo ./src/jar/fichero.jar
+script: ant todo src/jar/fichero.jar
