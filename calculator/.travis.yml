@@ -7,4 +7,7 @@ services:
 
 before_install:
   - sudo apt-get install ant-optional
-script: ant todo -f build.xml
+
+script:
+  - mvm -P travis test
+  - ant todo -f build.xml
