@@ -1,13 +1,10 @@
+
 language: java
-jdk:
-  - oraclejdk16
 
-services:
-  - docker
-
-before_install:
+before_script:
   - sudo apt-get install ant-optional
 
-script:
-  - mvm -P travis test
-  - ant todo -f build.xml
+addons:
+  apt:
+    packages:
+      ant
