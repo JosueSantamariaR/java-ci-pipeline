@@ -1,12 +1,8 @@
-dist: xenial
 language: java
+jdk:
+  - oraclejdk16
 
-before_script:
-  - sudo apt-get install ant-optional
+services:
+  - docker
 
-addons:
-  apt:
-    packages:
-      ant
-script:
-  - ant main
+script: ant main
