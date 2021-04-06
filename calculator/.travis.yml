@@ -1,4 +1,4 @@
-
+dist: xenial
 language: java
 
 before_script:
@@ -8,3 +8,5 @@ addons:
   apt:
     packages:
       ant
+script:
+  - ant main
