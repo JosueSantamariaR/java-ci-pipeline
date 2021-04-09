@@ -9,6 +9,5 @@ addons:
   apt:
     packages:
       ant
-
 script:
   - ant main
